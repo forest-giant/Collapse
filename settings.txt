@@ -1,5 +1,5 @@
-mode: 1
-res: 1280 1024
-volume: 0
+mode: -1
+res: -1
+volume: 80
 tutorial: 1
 wincap: 1

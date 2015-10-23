@@ -13,14 +13,14 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="SFML-2.0/include" />
+					<Add directory="/usr/include/" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
 					<Add library="sfml-audio" />
-					<Add directory="SFML-2.0/lib" />
+					<Add directory="/usr/lib/" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -39,7 +39,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="sources/base.cpp" />
+		<Unit filename="sources/base.h" />
+		<Unit filename="sources/blocks.cpp" />
+		<Unit filename="sources/blocks.h" />
+		<Unit filename="sources/main.cpp" />
+		<Unit filename="sources/run.cpp" />
+		<Unit filename="sources/run.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

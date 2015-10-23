@@ -1,0 +1,5 @@
+mode: 0
+res: 0 0
+volume: 0
+tutorial: 0
+wincap: 0

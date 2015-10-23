@@ -42,7 +42,7 @@ bool init(){
 
 if( SCREEN_MODE == 0 )//Windowed
 WINDOW_MAIN.create( sf::VideoMode( SCREEN_WIDTH, SCREEN_HEIGHT ),"Collapse!",sf::Style::Default );
-else
+else//Fullscreen
 WINDOW_MAIN.create( sf::VideoMode( SCREEN_WIDTH, SCREEN_HEIGHT ),"Collapse!",sf::Style::Fullscreen );
 
 if( WINDOW_MAIN.isOpen() == false ) return false;
@@ -61,8 +61,10 @@ GLOBAL_COLOURS[ 1 ] = sf::Color::White;
 GLOBAL_COLOURS[ 2 ] = sf::Color::Black;
 GLOBAL_COLOURS[ 3 ] = sf::Color::Black;
 
+//play music
 msMenu.openFromFile( "Data//Music//01 A Night Of Dizzy Spells.ogg" );
 msGame.openFromFile( "Data//Music//04 All of Us.ogg" );
+//set volume
 msMenu.setVolume( volume );
 msGame.setVolume( volume );
 msMenu.setLoop( true );

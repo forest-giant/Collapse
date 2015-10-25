@@ -1549,7 +1549,7 @@ out.close();
 
 WINDOW_MAIN.close();
 
-return 0;
+return 0;//succes
 }
 
 
